@@ -27,11 +27,21 @@
             ul {
                 display: inline-block;
             }
+            .light-mode {
+                background-color: white;
+                color: black;
+            }
 
         </style>
     </head>
     <body>
         <h2>Felix Fuentes III</h2>
+        <button onclick="changeThisPageFunc();">Toggle Light/Dark Mode</button>
+        <script type="text/javascript">
+            changeThisPageFunc = function() {
+               document.body.classList.toggle("light-mode");
+            }
+        </script>
         <br>
         <h4><u>Personal Information</u></h4>
         <p><b>Age:</b> 18</p>
